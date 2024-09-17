@@ -1,15 +1,16 @@
 <?php 
 function saudacao() {
-    $hora = 7;
-    $saudacao = "";
+    $hora = 20;
 
     if ($hora >= 0 && $hora <= 5) {
         $saudacao = "Boa madrugada";
-    }
-
-    if ($hora >= 6 && $hora <= 12) {
+    } elseif ($hora >= 6 && $hora <= 12) {
         $saudacao = "Bom dia";
-    }
+    } elseif ($hora >= 13 && $hora <= 18) {
+        $saudacao = "Boa tarde";
+    } else {
+        $saudacao = "Boa noite";
+    };
 
     return $saudacao;
 };
