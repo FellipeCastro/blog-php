@@ -1,4 +1,6 @@
 <?php 
+// comentário de uma linha
+# comentário de uma linha 
+/* comentário de múltiplas linhas */
 echo "<h1>Olá Mundo!</h1>"; 
-print "<p>Esse é o arquivo Index</p>";
 ?>
