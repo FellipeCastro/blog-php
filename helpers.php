@@ -3,7 +3,7 @@ function saudacao() {
     return "Boa tarde";
 };
 
-function resumirTexto($texto, $limite, $continue = "...") {
+function resumirTexto(string $texto, int $limite, $continue = "..."): string {
     return $texto;
 };
 ?>

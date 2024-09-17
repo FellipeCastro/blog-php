@@ -6,6 +6,12 @@ include_once "helpers.php";
 
 $texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatibus aliquam, ipsam sed dolorem, at quo, quas quibusdam fuga dolores adipisci incidunt repellendus quasi praesentium harum reprehenderit non atque maiores?"; 
 
+$string = "texto";
+$int = 10;
+$float = 9.99;
+$bool = false;
+$null = null;
+
 echo saudacao();
 echo "<hr>";
 echo resumirTexto($texto, 50, "continue");
