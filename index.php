@@ -1,4 +1,10 @@
 <?php 
-echo "<h1>Olá Mundo!</h1>"; 
-print "<p>Esse é o arquivo Index</p>";
+// Arquivo index responsável pela inicialização do sistema
+
+require_once "configuracao.php"; 
+include_once "helpers.php"; 
+
+echo saudacao();
+echo "<hr>";
+echo resumirTexto();
 ?>
