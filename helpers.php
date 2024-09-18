@@ -14,7 +14,14 @@ function saudacao() {
 
     return $saudacao;
 };
-
+/**
+ * Resume um texto
+ * 
+ * @param string $texto texto para resumir
+ * @param int $limite quantidade de caracteres
+ * @param string $continue opcional - o que deve ser exibido ao final do resumo
+ * @return string texto resumido
+ */
 function resumirTexto(string $texto, int $limite, $continue = "..."): string {
     $textoLimpo = trim(strip_tags($texto));
     if (mb_strlen($textoLimpo) <= $limite) {
