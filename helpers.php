@@ -16,7 +16,7 @@ function saudacao() {
 };
 
 function resumirTexto(string $texto, int $limite, $continue = "..."): string {
-    $textoLimpo = trim($texto);
+    $textoLimpo = trim(strip_tags($texto));
     if (mb_strlen($textoLimpo) <= $limite) {
         return $textoLimpo;
     };
