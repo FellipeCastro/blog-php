@@ -4,7 +4,16 @@
 require_once "configuracao.php"; 
 include_once "helpers.php"; 
 
-$texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatibus aliquam, ipsam sed dolorem, at quo, quas quibusdam fuga dolores adipisci incidunt repellendus quasi praesentium harum reprehenderit non atque maiores?";
+echo "R$" . formatarValor(10000);
+echo formatarNumero(1000000000000);
 
-echo resumirTexto($texto, 50,);
+// $valor = 3;
+// if ($valor) {
+//     echo $valor;
+// } else {
+//     echo 0;
+// }
+
+// echo $valor ? $valor : 0;
+// echo $valor ?: 0;
 ?>
