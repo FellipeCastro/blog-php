@@ -1,6 +1,6 @@
 <?php 
 function saudacao() {
-    $hora = 20;
+    echo $hora = date("H");
 
     if ($hora >= 0 && $hora <= 5) {
         $saudacao = "Boa madrugada";
