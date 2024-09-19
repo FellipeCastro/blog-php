@@ -4,5 +4,5 @@
 require_once "configuracao.php"; 
 include_once "helpers.php"; 
 
-echo $data = date("d/m/Y H:i:s");
+echo contarTempo("2022-04-18 13:24:53");
 ?>
