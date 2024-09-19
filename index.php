@@ -21,3 +21,11 @@ if (validarUrl($url)) {
 } else {
     echo "URL inválida";
 }
+
+echo "<br>";
+
+if (validarUrlComFiltro($url)) {
+    echo "URL válidada com filtro";
+} else {
+    echo "URL inválidada pelo filtro";
+}
