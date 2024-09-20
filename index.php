@@ -4,4 +4,4 @@
 require_once "configuracao.php";
 include_once "helpers.php";
 
-echo SITE_NOME;
+echo url("admin");
