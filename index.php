@@ -10,10 +10,14 @@ include_once "helpers.php";
 //     echo $numero++;
 // }
 
-for ($i = 1; $i <= 10; $i++) {
-    echo "Tabuada do $i" . "<br>";
-    for ($n = 1; $n <= 10; $n++) {
-        echo $i . " x " . $n . " = " . $i * $n . "<br>";
-    }
-    echo "<hr>";
-}
+// for ($i = 1; $i <= 10; $i++) {
+//     echo "Tabuada do $i" . "<br>";
+//     for ($n = 1; $n <= 10; $n++) {
+//         echo $i . " x " . $n . " = " . $i * $n . "<br>";
+//     }
+//     echo "<hr>";
+// }
+
+$cpf = "44052813863";
+// echo $limparNumero = preg_replace("/[^0-9]/", "", $cpf);
+var_dump(validarCpf($cpf));
