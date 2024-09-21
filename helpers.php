@@ -122,17 +122,31 @@ function formatarNumero(string $numero = null): string
 
 function saudacao()
 {
-    echo $hora = date("H");
+    $hora = date("H");
 
-    if ($hora >= 0 && $hora <= 5) {
-        $saudacao = "Boa madrugada";
-    } elseif ($hora >= 6 && $hora <= 12) {
-        $saudacao = "Bom dia";
-    } elseif ($hora >= 13 && $hora <= 18) {
-        $saudacao = "Boa tarde";
-    } else {
-        $saudacao = "Boa noite";
-    };
+    // if ($hora >= 0 && $hora <= 5) {
+    //     $saudacao = "Boa madrugada";
+    // } elseif ($hora >= 6 && $hora <= 12) {
+    //     $saudacao = "Bom dia";
+    // } elseif ($hora >= 13 && $hora <= 18) {
+    //     $saudacao = "Boa tarde";
+    // } else {
+    //     $saudacao = "Boa noite";
+    // };
+
+    switch ($hora) {
+        case $hora >= 0 && $hora <= 5:
+            $saudacao = "Boa madrugada";
+            break;
+        case $hora >= 6 && $hora <= 12:
+            $saudacao = "Bom dia";
+            break;
+        case $hora >= 13 && $hora <= 18:
+            $saudacao = "Boa tarde";
+            break;
+        deafult:
+            $saudacao = "Boa noite";
+    }
 
     return $saudacao;
 };
