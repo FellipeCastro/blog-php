@@ -134,19 +134,26 @@ function saudacao()
     //     $saudacao = "Boa noite";
     // };
 
-    switch ($hora) {
-        case $hora >= 0 && $hora <= 5:
-            $saudacao = "Boa madrugada";
-            break;
-        case $hora >= 6 && $hora <= 12:
-            $saudacao = "Bom dia";
-            break;
-        case $hora >= 13 && $hora <= 18:
-            $saudacao = "Boa tarde";
-            break;
-        deafult:
-            $saudacao = "Boa noite";
-    }
+    // switch ($hora) {
+    //     case $hora >= 0 && $hora <= 5:
+    //         $saudacao = "Boa madrugada";
+    //         break;
+    //     case $hora >= 6 && $hora <= 12:
+    //         $saudacao = "Bom dia";
+    //         break;
+    //     case $hora >= 13 && $hora <= 18:
+    //         $saudacao = "Boa tarde";
+    //         break;
+    //     deafult:
+    //         $saudacao = "Boa noite";
+    // }
+
+    $saudacao = match (true) {
+        $hora >= 0 && $hora <= 5 => "Boa madrugada",
+        $hora >= 6 && $hora <= 12 => "Bom dia",
+        $hora >= 13 && $hora <= 18 => "Boa tarde",
+        default => "Boa noite"
+    };
 
     return $saudacao;
 };
