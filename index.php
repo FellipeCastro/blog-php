@@ -1,23 +1,9 @@
 <?php
 // Arquivo index responsável pela inicialização do sistema
 
-require_once "configuracao.php";
+require_once "sistema/configuracao.php";
 include_once "helpers.php";
+include './sistema/Nucleo/Mensagem.php';
 
-// $numero = 1;
-
-// while ($numero <= 10) {
-//     echo $numero++;
-// }
-
-// for ($i = 1; $i <= 10; $i++) {
-//     echo "Tabuada do $i" . "<br>";
-//     for ($n = 1; $n <= 10; $n++) {
-//         echo $i . " x " . $n . " = " . $i * $n . "<br>";
-//     }
-//     echo "<hr>";
-// }
-
-$cpf = "44052813863";
-// echo $limparNumero = preg_replace("/[^0-9]/", "", $cpf);
-var_dump(validarCpf($cpf));
+$msg = new Mensagem();
+var_dump($msg);
