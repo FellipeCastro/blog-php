@@ -7,10 +7,9 @@ require_once "sistema/configuracao.php";
 include_once "helpers.php";
 include './sistema/Nucleo/Mensagem.php';
 
-$msg = new Mensagem();
-var_dump($msg);
-echo "<br>";
-echo $msg->sucesso("Mensagem de sucesso com novo método")->renderizar();
-echo $msg->erro("Mensagem de erro com novo método")->renderizar();
-echo $msg->alerta("Mensagem de alerta com novo método")->renderizar();
-echo $msg->informa("Mensagem de informação com novo método")->renderizar();
+echo (new Mensagem())->alerta("Mensagem de alerta");
+
+// $msg = new Mensagem();
+// echo $msg->sucesso("Mensagem de sucesso com novo método")->renderizar();
+
+// echo (new Mensagem())->sucesso("Mensagem de sucesso")->renderizar();
