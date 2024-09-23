@@ -5,9 +5,11 @@
 
 require_once "sistema/configuracao.php";
 include_once "helpers.php";
-include './sistema/Nucleo/Mensagem.php';
+include './Sistema/Nucleo/Mensagem.php';
 
-echo (new Mensagem())->alerta("Mensagem de alerta");
+use Sistema\Nucleo\Mensagem as Msg;
+
+echo (new Msg())->alerta("Mensagem de alerta");
 
 // $msg = new Mensagem();
 // echo $msg->sucesso("Mensagem de sucesso com novo método")->renderizar();
