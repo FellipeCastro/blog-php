@@ -7,3 +7,5 @@ include './sistema/Nucleo/Mensagem.php';
 
 $msg = new Mensagem();
 var_dump($msg);
+echo "<br>";
+echo $msg->renderizar();
