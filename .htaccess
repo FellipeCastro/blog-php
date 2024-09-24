@@ -1,14 +1,9 @@
-# Bloqueando acesso a pastas do projeto
 Options -indexes
 
-# Ativando URL's amigáveis
 RewriteEngine On
 
-# Definindo URL base
 RewriteBase /blog
 
 RewriteCond ${SCRIPT_FILENAME} !-f
 RewriteCond ${SCRIPT_FILENAME} !-d
 RewriteCond ${SCRIPT_FILENAME} !-l
-
-RewriteRule ^(.*)$ index.php/$1
